@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>커서 바꾸기</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
+    <script type="module" src="./js/01.js"></script>
+  </head>
+  <body>
+    <h1>내 포트폴리오 마우스얌</h1>
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <a href="https://www.naver.com">호버시 어떻게 될까용</a>
+
+    <div class="black-circle"><div class="inner-circle"></div></div>
+    <div class="inner-circle"></div>
+
+    <!-- 눈 감은 상태 (기본) -->
+    <svg
+      class="ghost"
+      width="50"
+      height="25"
+      viewBox="0 0 150 100"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="#fff"
+        stroke="#000"
+        stroke-width="3"
+        d="
+    M 40 50
+    C 70 60, 130 60, 160 50
+    C 130 40, 70 40, 40 50
+    Z
+  "
+      />
+    </svg>
+
+    <!-- 눈 뜬 상태 (호버시) -->
+    <svg
+      id="hippo"
+      width="50"
+      height="25"
+      viewBox="0 0 200 100"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="#666"
+        stroke="#666"
+        stroke-width="3"
+        d="
+    M 40 50
+    C 60 20, 140 20, 160 50
+    C 140 80, 60 80, 40 50
+    Z
+  "
+      />
+      <circle cx="500" cy="10" r="15" fill="#000" />
+    </svg>
+  </body>
+</html>
